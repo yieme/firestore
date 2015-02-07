@@ -6,7 +6,6 @@ Firebase implementation of a simple key/value store
 ```js
 npm install firestore --save
 ```
-
 <!-- EXAMPLES:BEGIN -->
 ## Examples
 
@@ -32,7 +31,7 @@ new Firestore({ name: 'pub' }, function firestoreInitialized(err, firestore) {
 ```js
 var Firestore = require('firestore')
 
-new Firestore({ name: 'pub', child: 'AWS/zone/ap-northeast-1' }, function firestoreInitialized(err, firestore) {
+new Firestore({ name: 'pub', path: 'AWS/zone/ap-northeast-1' }, function firestoreInitialized(err, firestore) {
   if (err) {
     console.log('ERROR', err)
     process.exit(1)
@@ -61,7 +60,6 @@ new Firestore({ name: 'pub' }, function firestoreInitialized(err, firestore) {
 })
 ```
 <!-- EXAMPLES:END -->
-
 # Inspiriation
 
 [callback free harmonious node](http://zef.me/6096/callback-free-harmonious-node-js/)
