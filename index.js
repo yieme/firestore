@@ -13,8 +13,9 @@
     }
 
     var firestore = this
-    options = options || {}
+    options       = options || {}
     options.child = options.child || 'kv'
+    options.path  = options.path || options.child
     if (options.name) options.url = 'https://' + options.name + '.firebaseio.com/'
     if (options.url && options.url.substr(-1) != '/') options.url += '/'
     var Ref = options.ref || (options.url && new Firebase(options.url)) || false
@@ -27,8 +28,8 @@
       callback(null, firestore)
     }
 
-    if (options.child) {
-      Ref = Ref.child(options.child)
+    if (options.path) {
+      Ref = Ref.child(options.path)
     } else {
       var path = '/' + Ref.toString().split('.com/')[1]
       Ref = Ref.root().child(path)  // generate new firebase reference
