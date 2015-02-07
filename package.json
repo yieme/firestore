@@ -1,6 +1,6 @@
 {
   "name": "firestore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firebase implementation of a simple key/value store",
   "main": "index.js",
   "scripts": {
