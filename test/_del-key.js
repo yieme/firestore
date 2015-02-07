@@ -7,7 +7,7 @@ var _      = require('lodash')
   , exec   = require('child_process').exec
 ;
 describe('example', function() {
-  this.timeout(9000)
+  this.timeout(30000)
   it('Set value', function(done) {
   exec('node examples/del-key.js', function (error, stdout, stderr) {
 //    if (error) throw error
