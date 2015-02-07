@@ -4,7 +4,7 @@
 
 var Firestore = require('../index')
 
-new Firestore({ name: 'pub', child: 'AWS/zone/ap-northeast-1' }, function firestoreInitialized(err, firestore) {
+new Firestore({ name: 'pub', path: 'AWS/zone/ap-northeast-1' }, function firestoreInitialized(err, firestore) {
   if (err) {
     console.log('ERROR', err)
     process.exit(1)
