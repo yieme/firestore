@@ -1,4 +1,4 @@
-# firestore <img src="https://raw.githubusercontent.com/yieme/firestore/master/firestore.png" align="right" height="160">
+# firestore <img src="https://raw.githubusercontent.com/yieme/firestore/master/firestore.png" align="right" height="165">
 Firebase implementation of a simple key/value store
 
 ## Install
