@@ -60,7 +60,7 @@ new Firestore({ name: 'pub' }, function firestoreInitialized(err, firestore) {
 })
 ```
 <!-- EXAMPLES:END -->
-# Inspiriation
+# Inspiration
 
 [callback free harmonious node](http://zef.me/6096/callback-free-harmonious-node-js/)
 
